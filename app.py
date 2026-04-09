@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 import joblib
 import pandas as pd
 
-app = Flask(__name__)
+app = Flask(__name__) 
 
 # charger le modèle
 model = joblib.load('data/churn_model_clean.pkl')
