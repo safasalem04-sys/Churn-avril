@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Churn Prediction</title>
+</head>
+<body>
+
+<h2>Prédiction de Churn</h2>
+
+<form action="/predict" method="post">
+    <input type="number" name="Age" placeholder="Age" required><br><br>
+    <input type="number" name="Account_Manager" placeholder="Account Manager (0/1)" required><br><br>
+    <input type="number" name="Years" placeholder="Years" required><br><br>
+    <input type="number" name="Num_Sites" placeholder="Num Sites" required><br><br>
+
+    <button type="submit">Prédire</button>
+</form>
+
+<h3>{{ prediction_text }}</h3>
+
+</body>
+</html>
